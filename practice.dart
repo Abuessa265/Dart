@@ -16,4 +16,6 @@ class Student {
 void main() {
   Student obj = new Student('Abu essa', 24);
   obj.displayInfo();
+  Student obj1 = new Student("Abu Musa", 12);
+  obj1.displayInfo();
 }
