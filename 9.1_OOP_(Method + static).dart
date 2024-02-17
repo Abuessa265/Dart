@@ -48,7 +48,8 @@ void main() {
   // no need to create object for calling 'platform variable' because it's a static variable
   MyClass.platform = 'Vivosoft';
 
-  MyClass hasan = MyClass('Hasan Ahmad', 21, 'Leading University');
+  MyClass hasan = MyClass('Abu essa', 24,
+      'Bangladesh University of Business and Technology University');
   hasan.printMyFamily('Miraz Uddin', 'Lucky Begum', 'Sylhet');
   // no need to create object for calling 'printPlatform' method cause it's static method
   MyClass.printPlatform();
