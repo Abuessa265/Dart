@@ -5,19 +5,12 @@
 /// benefits of using static is that consuming time and memory complexity
 
 class MyClass {
-  //static String platform = 'Ostad'; // static variable
-
-  static String platform = 'Ostad'; // static variable
-
+  static String platform = 'Ostad'; //static veriable
   String name = '';
   int age = 0;
   String versity = '';
 
-  // constructor
-  MyClass(String name, int age, String versity) {
-    this.name = name;
-    this.age = age;
-    this.versity = versity;
+  MyClass(this.name, this.age, this.versity) {
     this.printMyDetails();
   }
 
@@ -25,44 +18,33 @@ class MyClass {
   void printMyDetails() {
     print('Name : $name');
     print('Age : $age');
-    print('versity : $versity');
+    print('Versity :$versity');
   }
 
   // method
-  void printMyFamily(String fatherName, String motherName, String address) {
-    print('Fathers Name : $fatherName');
-    print('Mothers Name : $motherName');
+  void printMyFamaly(String fatherName, String motherName, String address) {
+    print('Father name : $fatherName');
+    print('Mother name : $motherName');
     print('Address : $address');
-
-    //print(platform);
-    //MyClass.printPlatform();
   }
 
-  // static method
+  //static method
   static void printPlatform() {
     print('Platform : $platform');
+    print('');
   }
 }
 
 void main() {
-  // no need to create object for calling 'platform variable' because it's a static variable
-  MyClass.platform = 'Vivosoft';
-
-  MyClass hasan = MyClass('Abu essa', 24,
-      'Bangladesh University of Business and Technology University');
-  hasan.printMyFamily('Miraz Uddin', 'Lucky Begum', 'Sylhet');
-  // no need to create object for calling 'printPlatform' method cause it's static method
+  MyClass.platform =
+      "Trodev-IT"; // no need to create object for calling 'printPlatform' method cause it's static method
+  MyClass obj1 = MyClass('Abu essa', 24, 'BUBT');
+  obj1.printMyFamaly('Osman Goni', 'Asma Khatun', 'Jessore');
   MyClass.printPlatform();
 
-  print('');
-
-  MyClass rahat = MyClass('Rahat Alam', 22, 'Leading University');
-  rahat.printMyFamily('Aftab Alam', 'Sumaiya Islam', 'Brammhan-baria');
-  MyClass.printPlatform();
-
-  print('');
-
-  MyClass sammun = MyClass('Sammun', 21, 'Leading University');
-  sammun.printMyFamily('Aftab Alam', 'Sumaiya Islam', 'Kulaura');
-  MyClass.printPlatform();
+  MyClass obj2 = MyClass('Jakaria', 23, "KUET");
+  obj2.printMyFamaly('Korim', 'ohima', 'Jessore');
+  MyClass.platform = 'DataSoft';
+  MyClass
+      .printPlatform(); // no need to create object for calling 'printPlatform' method cause it's static method
 }

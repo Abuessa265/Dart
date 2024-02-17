@@ -8,18 +8,21 @@ class MyClass {
     this.printMyDetails();
   }
 
+  // method
   void printMyDetails() {
     print('Name : $name');
     print('Age : $age');
     print('Versity :$versity');
   }
 
+  // method
   void printMyFamaly(String fatherName, String motherName, String address) {
     print('Father name : $fatherName');
     print('Mother name : $motherName');
     print('Address : $address');
   }
 
+  //static method
   static void printPlatform() {
     print('Platform : $platform');
     print('');
@@ -27,7 +30,8 @@ class MyClass {
 }
 
 void main() {
-  MyClass.platform = "Trodev-IT";
+  MyClass.platform =
+      "Trodev-IT"; // no need to create object for calling 'printPlatform' method cause it's static method
   MyClass obj1 = MyClass('Abu essa', 24, 'BUBT');
   obj1.printMyFamaly('Osman Goni', 'Asma Khatun', 'Jessore');
   MyClass.printPlatform();
@@ -35,5 +39,6 @@ void main() {
   MyClass obj2 = MyClass('Jakaria', 23, "KUET");
   obj2.printMyFamaly('Korim', 'ohima', 'Jessore');
   MyClass.platform = 'DataSoft';
-  MyClass.printPlatform();
+  MyClass
+      .printPlatform(); // no need to create object for calling 'printPlatform' method cause it's static method
 }
