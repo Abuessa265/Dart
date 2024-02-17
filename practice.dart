@@ -1,21 +1,39 @@
-class Student {
+class MyClass {
+  static String platform = 'Ostad';
   String name = '';
   int age = 0;
+  String versity = '';
 
-  Student(String name, int age) {
-    this.name = name;
-    this.age = age;
+  MyClass(this.name, this.age, this.versity) {
+    this.printMyDetails();
   }
 
-  void displayInfo() {
-    print(name);
-    print(age);
+  void printMyDetails() {
+    print('Name : $name');
+    print('Age : $age');
+    print('Versity :$versity');
+  }
+
+  void printMyFamaly(String fatherName, String motherName, String address) {
+    print('Father name : $fatherName');
+    print('Mother name : $motherName');
+    print('Address : $address');
+  }
+
+  static void printPlatform() {
+    print('Platform : $platform');
+    print('');
   }
 }
 
 void main() {
-  Student obj = new Student('Abu essa', 24);
-  obj.displayInfo();
-  Student obj1 = new Student("Abu Musa", 12);
-  obj1.displayInfo();
+  MyClass.platform = "Trodev-IT";
+  MyClass obj1 = MyClass('Abu essa', 24, 'BUBT');
+  obj1.printMyFamaly('Osman Goni', 'Asma Khatun', 'Jessore');
+  MyClass.printPlatform();
+
+  MyClass obj2 = MyClass('Jakaria', 23, "KUET");
+  obj2.printMyFamaly('Korim', 'ohima', 'Jessore');
+  MyClass.platform = 'DataSoft';
+  MyClass.printPlatform();
 }
