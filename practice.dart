@@ -31,7 +31,7 @@ class MyClass {
 
 void main() {
   MyClass.platform =
-      "Trodev-IT"; // no need to create object for calling 'printPlatform' method cause it's static method
+      "Trodev-IT"; //no need to create object for calling 'printPlatform' method cause it's static method
   MyClass obj1 = MyClass('Abu essa', 24, 'BUBT');
   obj1.printMyFamaly('Osman Goni', 'Asma Khatun', 'Jessore');
   MyClass.printPlatform();

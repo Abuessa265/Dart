@@ -31,14 +31,8 @@ void main() {
   int a = 82;
   int b = 10;
 
-  int c = a + b;
-  print(c);
-
-  int d = a - b;
-  print(d);
-
-  int e = a * b;
-  print(e);
+  //int c = a + b;
+  print('The sum is : ${12 + 45}');
 
   // type casting
   double f = (a / b).toDouble();
@@ -46,4 +40,18 @@ void main() {
 
   String ageee = (24 - 1.08).toString();
   print(ageee);
+
+  int firstNumber = 10;
+  double secondNumber = 3.1416;
+  double result = firstNumber.toDouble() + secondNumber;
+  print(result.toStringAsFixed(2));
+
+  String name = result.toString();
+  print(result.runtimeType);
+  print(double.parse(name));
+  double resultThree = 12.12 + double.parse(name);
+
+  print("Value is : $resultThree");
+  int x = int.tryParse('123f') ?? 0;
+  print(x + 34);
 }
