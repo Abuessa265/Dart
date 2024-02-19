@@ -54,4 +54,8 @@ void main() {
   print("Value is : $resultThree");
   int x = int.tryParse('123f') ?? 0;
   print(x + 34);
+
+  int v1 = 12;
+  int v2 = 21;
+  print("The value is : ${v1 + v2}");
 }

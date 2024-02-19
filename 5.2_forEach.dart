@@ -1,5 +1,5 @@
 void main() {
-  List<String> versityName = ["SUST", "BUET", "RUET", "CUET"];
+  List<String> versityName = ['BUBT', "SUST", "BUET", "RUET", "CUET"];
 
   versityName.forEach((element) {
     print(element);
@@ -8,7 +8,7 @@ void main() {
   print("\nStandard way\n");
 
   // standard way
-  for (var value in versityName) {
-    print(value);
+  for (String i in versityName) {
+    print(i);
   }
 }

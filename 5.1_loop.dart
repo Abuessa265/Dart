@@ -1,3 +1,6 @@
+import 'dart:math';
+import 'dart:io';
+
 void main() {
   // print 1 to 5
   for (var i = 1; i <= 5; i++) {
@@ -24,6 +27,18 @@ void main() {
 
   List<String> fruits = ["Mango", "Jackfruit", "Pineapple", "Watermelon"];
   for (int i = 0; i < fruits.length; i++) {
-    print(fruits[i]);
+    print("Frout name $i = ${fruits[i]}");
   }
+
+//forIn loop
+  List<int> L = [1, 2, 3, 4];
+  for (int i in L) {
+    print(i);
+  }
+
+  //forEach
+  print("\n");
+  L.forEach((element) {
+    print(element);
+  });
 }
