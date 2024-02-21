@@ -27,6 +27,13 @@ void main() {
   bool ans = false;
   print(ans);
 
+  int? j; // nullable veriable
+  print(j);
+  int k = 12;
+  int rej = (j ??
+      0 + k); //nullable veriable er sate kono kisu add korte hole eivabe korte hbe and nullable veriable er ekta valu deta hbe jemon ekane 0 deoa hoyese.
+  print(rej);
+
   //operators
   int a = 82;
   int b = 10;
