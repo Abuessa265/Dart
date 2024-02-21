@@ -1,4 +1,13 @@
 void main() {
+  welcomeMessage('Abu essa', "Jessore", 24);
+  welcomeMessage('Korim', "Khulna", 20);
+  welcomeMessage('Jakaria', "Dhaka", 26);
+  welcomeMessage('Abu essa', "Jessore", 24);
+  print("\n");
+  OptionalPara(Name: 'Essa', Versity: 'BUBT', age: 24);
+  OptionalPara(Name: 'Jakaria', Versity: 'BUBT', age: 24);
+  OptionalPara(Name: 'Musa');
+
   add();
   add2(3, 4);
   // ignore: unused_local_variable
@@ -6,6 +15,23 @@ void main() {
 
   print(ans);
   print("\n");
+}
+
+//[] -optional parameter caile amra valu na delau kaj kore
+//[String address,int age]
+
+welcomeMessage(String name, [String address = '', int age = 0]) {
+  print("Good Morning, $name");
+  print("Address $address");
+  print("age $age");
+}
+
+//required ta must deta hbe na hole code run korbe na ..required er ta cara onno gula na delau run korbe
+//named optional parameter welcomeMessage({String name, String address, int age}) {......}
+OptionalPara({required String Name, String Versity = '', int age = 0}) {
+  print("Good Morning, $Name");
+  print("Versity $Versity");
+  print("age $age");
 }
 
 void add() {
