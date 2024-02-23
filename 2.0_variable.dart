@@ -4,6 +4,7 @@ void main() {
   dynamic lname = "Essa";
   var age = 24;
 
+  //Niser aivabe print kora ke string interpolation bole orthat ekta veriable ke etar modde inject korano
   print("My first name is $fname and last name is $lname and my age is $age");
 
   // type safety
