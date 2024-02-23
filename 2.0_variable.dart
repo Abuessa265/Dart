@@ -1,11 +1,10 @@
 void main() {
   // type non safety
-  var fname = "Hasan";
-  dynamic lname = "Ahmad";
-  var age = 21;
+  var fname = "Abu";
+  dynamic lname = "Essa";
+  var age = 24;
 
-  print(fname + " " + lname);
-  print(age);
+  print("My first name is $fname and last name is $lname and my age is $age");
 
   // type safety
 
