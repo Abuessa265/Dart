@@ -1,26 +1,36 @@
-// abstract
-// object is not applicable for abstract class
-// abstract class inherit using 'implements' keyword
+// object/instance is not applicable for abstract class
+// abstract class inherit using 'implements' or 'extends keyword
 
 abstract class Letter {
   void write();
+  void app() {
+    print("This is application section");
+  }
 }
 
-class HasanLetter implements Letter {
+//extends korle abstract class er je methode ase oi methode er je jegulor body nai sei methode must deta hbe
+//je methode er body ase oigula Mandatory na ,delau kj kore na delau kj kore
+class AbuessaLettter extends Letter {
   @override
   void write() {
-    print('I wanna goto canada');
+    print("This is abu essa letter ");
   }
 
-  void display() {
-    print('Hasan letter done');
+  void dev() {
+    print("Abu essa is a software developer");
   }
 }
 
+//implements korle abstract class er je methode ase all methode must override korte hbe
 class RahatLetter implements Letter {
   @override
   void write() {
-    print('I wanna goto germany');
+    print('Rahat write a code');
+  }
+
+  @override
+  void app() {
+    print("This is Rahat application ");
   }
 
   void display() {
@@ -31,19 +41,13 @@ class RahatLetter implements Letter {
 void main() {
   // no object support for abstract class
 
-  HasanLetter ob = new HasanLetter();
-  ob.write();
-  ob.display();
-
+  AbuessaLettter AL = new AbuessaLettter();
+  AL.write();
+  AL.app();
+  AL.dev();
+  print("\n");
   RahatLetter ob1 = new RahatLetter();
   ob1.write();
+  ob1.app();
   ob1.display();
-
-  // // using polymorphism
-  // Letter ob2 = new HasanLetter();
-  // ob2.write();
-  // ob2.display(); // can't call by this cause of polymorphism
-
-  // ob2 = new RahatLetter();
-  // ob2.write();
 }

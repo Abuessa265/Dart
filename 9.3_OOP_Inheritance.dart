@@ -26,7 +26,6 @@ class Student extends Human {
 
   @override
   void talking() {
-    // TODO: implement talking
     print("Talking politely");
   }
 
@@ -61,11 +60,11 @@ void main() {
   studentOne.talking();
   print(studentOne.legs);
 
-  Teacher englishTeacher = Teacher(2, 2, 2, "BUBT", "CSE");
+  Teacher englishTeacher = Teacher(2, 2, 2, "RUET", "English");
   print("\nThis is Teacher section");
   englishTeacher.moving();
   englishTeacher.eating();
   englishTeacher.talking();
-  englishTeacher.institute;
-  englishTeacher.subject;
+  print(englishTeacher.institute);
+  print(englishTeacher.subject);
 }

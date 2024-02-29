@@ -1,5 +1,6 @@
 import 'person.dart';
 
+//Encapsulation is a mechanism for hiding important and sensitive data from users.
 void main() {
   Person obj = Person("Abu", "Essa", 24, "Male");
   print(obj.getFullName());

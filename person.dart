@@ -1,8 +1,6 @@
 class Person {
-  String _firstName;
-  String _lastName;
-  String _gender;
-  int _age;
+  String _firstName, _lastName, _gender;
+  int _age;               
 
   Person(this._firstName, this._lastName, this._age, this._gender) {
     print(_getBirthYear());
