@@ -1,5 +1,6 @@
 // object/instance is not applicable for abstract class
 // abstract class inherit using 'implements' or 'extends keyword
+//abstraction এমন প্রসেস যেটার মাধ্যমে complexity hide করি।
 
 abstract class Letter {
   void write();
